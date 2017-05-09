@@ -1,0 +1,9 @@
+
+<h1>
+	<% if user_signed_in? %>
+		You are loged as <%= current_user.email%> .
+	<% end %>
+	<% if !user_signed_in? %>
+		Log in before you do something.
+	<% end %>
+</h1>
